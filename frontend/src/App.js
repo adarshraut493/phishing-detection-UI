@@ -26,7 +26,7 @@ function App() {
 
     try {
       const res = await axios.get(
-        `http://127.0.0.1:8000/predict-url?url=${encodeURIComponent(url)}`
+        `https://phishing-detection-ui-2.onrender.com/predict-url?url=${encodeURIComponent(url)}`
       );
       setResult(res.data);
     } catch (err) {
